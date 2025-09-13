@@ -179,9 +179,23 @@ Animated Chart Modal Component/
 └── README.md              # This file
 ```
 
+## Performance Features
+
+- **Responsive Design**: Automatically adapts to window resizing with throttled event handling
+- **Safari Optimizations**: Special mask repaint fixes for Safari's vector rendering issues
+- **Smooth Animations**: Hardware-accelerated transforms for optimal performance
+- **Memory Efficient**: Proper cleanup and event listener management
+
+## Browser Support
+
+- Chrome 60+
+- Firefox 55+
+- Safari 12+
+- Edge 79+
+
 ## License
 
-MIT License - feel free to use in your projects!
+MIT License - feel free to use this component in your projects!
 
 ## Contributing
 
