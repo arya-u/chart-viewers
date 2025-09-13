@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Chart Modal Example - Responsive Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            border: 2px solid #333;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+        }
+        .small { width: 300px; height: 200px; }
+        .medium { width: 480px; height: 350px; }
+        .large { width: 800px; height: 600px; }
+        .responsive { width: 90vw; height: 70vh; max-width: 1000px; max-height: 700px; }
+        h2 { text-align: center; margin: 30px 0 10px 0; }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Responsive Animated Chart Modal Test</h1>
+    
+    <!-- <h2>Small Container (300x200)</h2>
+    <div id="modal-container-small" class="container small"></div>
+     -->
+    <!-- <h2>Medium Container (480x350)</h2>
+    <div id="modal-container-medium" class="container medium"></div>
+    
+    <h2>Large Container (800x600)</h2>
+    <div id="modal-container-large" class="container large"></div>
+     -->
+    <h2>Responsive Container (90vw x 70vh)</h2>
+    <div id="modal-container-responsive" class="container responsive"></div>
+
+    <script src="AnimatedChartModal.js"></script>
+    <script>
+        const images = [
+            'https://picsum.photos/154/96?random=1',
+            'https://picsum.photos/154/96?random=2',
+            'https://picsum.photos/154/96?random=3',
+            'https://picsum.photos/154/96?random=4',
+            'https://picsum.photos/154/96?random=5',
+            'https://picsum.photos/154/96?random=6',
+            'https://picsum.photos/154/96?random=7'
+        ];
+        
+        // Create modals for different container sizes
+        // const modalSmall = createAnimatedChartModal({
+        //     container: document.getElementById('modal-container-small'),
+        //     percentage: 65,
+        //     autoPlay: true,
+        //     images: images
+        // });
+        
+        // const modalMedium = createAnimatedChartModal({
+        //     container: document.getElementById('modal-container-medium'),
+        //     percentage: 75,
+        //     autoPlay: true,
+        //     images: images
+        // });
+        
+        // const modalLarge = createAnimatedChartModal({
+        //     container: document.getElementById('modal-container-large'),
+        //     percentage: 85,
+        //     autoPlay: true,
+        //     images: images
+        // });
+        
+        const modalResponsive = createAnimatedChartModal({
+            container: document.getElementById('modal-container-responsive'),
+            percentage: 90,
+            autoPlay: true,
+            images: images
+        });
+    </script>
+</body>
+</html>
